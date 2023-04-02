@@ -290,7 +290,7 @@ class HilbertCurve:
 
         if match_type:
             if isinstance(points, np.ndarray):
-                distances = np.array(distances, dtype=points.dtype)
+                distances = np.array(distances, dtype=np.int32)
             else:
                 target_type = type(points)
                 distances = target_type(distances)
